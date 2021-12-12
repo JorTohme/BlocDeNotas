@@ -28,6 +28,10 @@ CREATE TABLE `notas` (
   `DATE` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`ID_NOTA`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+insert into `blocdenotas`.`escritor` (`nombre`, `contrasenia`)
+	values
+	('ADMIN', '123456789');
 ```
 
 Then, in Form1.cs, line 28 inside method "CreateDataBase( here )" you must insert as string (""):
